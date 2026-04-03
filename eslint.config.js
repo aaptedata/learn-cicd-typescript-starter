@@ -15,6 +15,7 @@ export default defineConfig([
     languageOptions: { globals: globals.node },
   },
   tseslint.configs.recommended,
+  { ignores: ["dist/", "coverage/"] },
   pluginSecurity.configs.recommended,
 ]);
 
